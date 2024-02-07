@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$body-color: #0a0a23; // Define a variable for body background color
+$text-color: #ffffff; // Define a variable for text color
+$game-max-width: 500px; // Define a variable for max-width of game
+$game-max-height: 400px; // Define a variable for max-height of game
+
+body {
+  background-color: $body-color;
+}
+
+#text {
+  background-color: $body-color; // Use the body background color variable
+  color: $text-color;
+  padding: 10px;
+}
+
+#game {
+  max-width: $game-max-width; // Use the max-width variable
+  max-height: $game-max-height; // Use the max-height variable
+  background-color: $text-color; // Should this be a different color?
+  color: $text-color;
+  margin: 30px auto 0 auto;
+  padding: 10px;
+}
+
+#controls, #stats {
+  border: 1px solid #0a0a23;
+  color: $body-color;
+  padding: 5px;
+}
+
+#monsterStats {
+  display: none;
+  padding: 5px;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  background-color: #c70d0d;
+}
+
+.stat {
+  padding-right: 10px;
+}
+
+button{
+  cursor: pointer;
+  color: #0a0a23;
+  background-color: #feac32;
+  background-image: linear-gradient(#fecc4c, #ffac33);
+  border: 3px solid #feac32;
+}
